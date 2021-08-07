@@ -6,7 +6,7 @@ public class DisplyOutput implements InterAddressBook {
 
     @Override
     public void Display(int temp, ArrayList<ArrayList<String>> addBook,String[] index) {
-        System.out.println("Your Data Got Stored Successfully in Memory ...");
+        System.out.println("\nYour Data Got Stored Successfully in Memory ...\n");
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < temp; j++) {
                 if (j == 0) {
@@ -19,4 +19,10 @@ public class DisplyOutput implements InterAddressBook {
         }
 
     }
+
+    @Override
+    public void UserInputs(int temp, ArrayList<ArrayList<String>> addBook, String[] index) {
+
+    }
+
 }

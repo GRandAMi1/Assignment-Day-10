@@ -1,16 +1,25 @@
 package com.blz.addressbook;
 
-import java.util.Scanner;
+import java.util.ArrayList;
 
-public class UserInput {
-    private static final Scanner SC = new Scanner(System.in);
+public class UserInput implements InterAddressBook {
 
-    public static int intInput() {
-        return SC.nextInt();
+    @Override
+    public void Display(int temp, ArrayList<ArrayList<String>> addBook, String[] index) {
+
     }
 
-    public static String stringInput() {
-        return SC.next();
+    @Override
+    public void UserInputs(int temp, ArrayList<ArrayList<String>> addBook, String[] index) {
+        for (int j = 0; j < temp; j++) {
+            System.out.println("\nEnter Details below ...\n");
+            for (int i = 0; i < 8; i++) {
+
+                System.out.print("Enter your " + index[i] + " : ");
+                addBook.get(i).add(UserInputUtils.stringInput());
+
+            }
+
+        }
     }
 }
-

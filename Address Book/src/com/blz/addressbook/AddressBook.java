@@ -3,7 +3,7 @@ package com.blz.addressbook;
 import java.util.ArrayList;
 
 public class AddressBook {
-    public static InterAddressBook impl = new DisplyOutput();
+
     public static String[] index = {"First Name", "Last Name", "Address", "City", "State", "Zip Code", "Mobile Number", "Email ID"};
 
     public static void main(String[] args) {
@@ -27,17 +27,12 @@ public class AddressBook {
         addBook.add(mail);
 
         System.out.print("How many Details you want to enter : ");
-        int temp = UserInput.intInput();
-        for (int j = 0; j < temp; j++) {
-            System.out.println("\nEnter Details below ...\n");
-            for (int i = 0; i < 8; i++) {
+        int temp = UserInputUtils.intInput();
 
-                System.out.print("Enter your " + index[i] + " : ");
-                addBook.get(i).add(UserInput.stringInput());
+        InterAddressBook impl2 = new UserInput();
+        impl2.UserInputs(temp,addBook,index);
 
-            }
-
-        }
+        InterAddressBook impl = new DisplyOutput();
         impl.Display(temp,addBook,index);
     }
 
