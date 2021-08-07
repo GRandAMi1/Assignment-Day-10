@@ -2,7 +2,7 @@ package com.blz.addressbook;
 
 import java.util.Scanner;
 
-public class UserInput {
+public class UserInputUtils {
     private static final Scanner SC = new Scanner(System.in);
 
     public static int intInput() {

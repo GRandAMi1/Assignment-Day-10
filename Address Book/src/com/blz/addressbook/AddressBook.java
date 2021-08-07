@@ -27,13 +27,13 @@ public class AddressBook {
         addBook.add(mail);
 
         System.out.print("How many Details you want to enter : ");
-        int temp = UserInput.intInput();
+        int temp = UserInputUtils.intInput();
         for (int j = 0; j < temp; j++) {
             System.out.println("\nEnter Details below ...\n");
             for (int i = 0; i < 8; i++) {
 
                 System.out.print("Enter your " + index[i] + " : ");
-                addBook.get(i).add(UserInput.stringInput());
+                addBook.get(i).add(UserInputUtils.stringInput());
 
             }
 
