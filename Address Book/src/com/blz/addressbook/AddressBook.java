@@ -37,48 +37,38 @@ public class AddressBook {
 
         impl.Display(temp, addBook, index);
 
-        addressBook.Edit(addBook, temp);
+        addressBook.DeleteData(addBook, temp);
 
 
     }
 
-    public void Edit(ArrayList<ArrayList<String>> addBook, int temp) {
-        System.out.println("Enter First Name of contact to Edit : ");
-        String firstName = UserInputUtils.stringInput();
-        int contactIndex = -1;
-        for (int i = 0; i < temp; i++) {
-            if (addBook.get(0).get(i).equals(firstName)) {
-                contactIndex = i;
+    public void DeleteData(ArrayList<ArrayList<String>> addBook, int temp) {
+        while (true) {
+            System.out.println("Do you want to delete data (y/n) : ");
+            if (UserInputUtils.charInput() == 'y') {
+                System.out.println("Enter First Name of contact to Delete : ");
+                String firstName = UserInputUtils.stringInput();
+                int contactIndex = -1;
+                for (int i = 0; i < temp; i++) {
+                    if (addBook.get(0).get(i).equals(firstName)) {
+                        contactIndex = i;
+                        break;
+                    }
+                }
+
+                if (contactIndex != -1) {
+                    for (int i = 0; i < 8; i++) {
+                        addBook.get(i).remove(contactIndex);
+                    }
+                    temp = temp - 1;
+                    impl.Display(temp, addBook, index);
+
+                } else {
+                    System.out.println("First name you Entered not Found ...");
+                }
+            } else {
                 break;
             }
-
-        }
-        if (contactIndex != -1) {
-            System.out.println("0.First Name ,1.Last Name ,2.Address ,3.City ,4.State ,5.Zip Code ,6.Mobile Number ,7.Email ID ,8.All Details ");
-            System.out.println("Press following number to Edit specific Field : ");
-            int selected = UserInputUtils.intInput();
-            if (selected <= 7) {
-                System.out.print("Enter your " + index[selected] + " : ");
-                addBook.get(selected).set(contactIndex, UserInputUtils.stringInput());
-                impl.Display(temp, addBook, index);
-                addressBook.Recurring(addBook, temp);
-            }
-            if (selected == 8) {
-                for (int i = 0; i < 8; i++) {
-                    System.out.print("Enter your " + index[i] + " : ");
-                    addBook.get(i).set(contactIndex, UserInputUtils.stringInput());
-                }
-                impl.Display(temp, addBook, index);
-                addressBook.Recurring(addBook, temp);
-            }
         }
     }
-
-    public void Recurring(ArrayList<ArrayList<String>> addBook, int temp) {
-        System.out.println("Do you want to perform edit operation (y/n) : ");
-        if (UserInputUtils.charInput() == 'y') {
-            Edit(addBook, temp);
-        }
-    }
-
 }

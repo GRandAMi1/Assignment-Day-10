@@ -4,7 +4,6 @@
     <list default="true" id="a1a16ee8-ec7e-4c8c-8a1d-8e2c25db163f" name="Changes" comment="Added multiple User details input and store.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/AddressBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/UserInputUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/UserInputUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
