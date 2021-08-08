@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1a16ee8-ec7e-4c8c-8a1d-8e2c25db163f" name="Changes" comment="Added multiple User details input and store.">
-      <change afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/UserInputUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/AddressBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/DisplyOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/DisplyOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/InterAddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/InterAddressBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/UserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/AddressBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/AddressBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/ArrayListOperations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/DisplyOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/DisplyOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/InterAddressBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/InterAddressBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/UserInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Day-10/com/blz/addressbook/UserInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/UserInputUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Address Book/src/com/blz/addressbook/UserInputUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

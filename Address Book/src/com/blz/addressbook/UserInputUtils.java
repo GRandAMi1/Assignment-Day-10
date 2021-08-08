@@ -12,5 +12,9 @@ public class UserInputUtils {
     public static String stringInput() {
         return SC.next();
     }
+
+    public static char charInput() {
+        return Character.toLowerCase(SC.next().charAt(0));
+    }
 }
 
